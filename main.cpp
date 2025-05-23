@@ -511,7 +511,7 @@ void display() {
 
 void update(int value) {
     static float time = 0;
-    float dt = 1e-14f;
+    float dt = 2e-14f;
     time += dt;
     buildNeighborLists();
     integrateMotion(dt);
