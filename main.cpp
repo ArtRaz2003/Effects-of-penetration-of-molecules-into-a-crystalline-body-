@@ -191,7 +191,7 @@ void buildNeighborLists() {
         float n = (temperature / normtemperature)+0.01;
         float f_harmonic = n * a_morse * De * (1 - exp(-a_morse * dr)) * exp(-a_morse * dr);
 
-        // Ангармоническая поправка (меньше чем было)
+        
         float f_anharmonic = (isSurfaceI ? 0.5f : 0.2f) * (3.0f * dr * dr - 2.0f * dr * dr * dr);
 
         return (f_harmonic + f_anharmonic) * dir;
